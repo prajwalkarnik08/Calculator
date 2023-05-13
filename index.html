@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        html, body{
+            background-color: rgb(12, 12, 12);
+            min-height: 10%;
+            width: 60%;
+            padding: 26px;
+        }
+        
+        .total{
+            color: white;
+            text-align: end;
+            font-size: 100px;
+            margin-right: 20px;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+        
+        .buttons{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        
+        .item{
+            height: 100px;
+            font-size: 50px;
+            border-radius: 100%;
+            margin: 1px;
+        }
+        
+        .grey{
+            background-color: gray;
+            border: 0;
+        }
+        
+        .orange{
+            background-color: #ff8431;
+            border: 0;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <textarea id="cal" rows="5" cols="53">
+            </textarea>
+        <div class="total">
+            0
+        </div>
+
+        <div class="buttons">
+            <button class="item grey">9</button>
+            <button class="item grey">8</button>
+            <button class="item grey">7</button>
+            <button class="item grey">6</button>
+            <button class="item grey">5</button>
+            <button class="item grey">4</button>
+            <button class="item grey">3</button>
+            <button class="item grey">2</button>
+            <button class="item grey">1</button>
+            <button class="item grey">0</button>
+            <button class="item orange">+</button>
+            <button class="item orange">-</button>
+            <button class="item orange">/</button>
+            <button class="item orange">*</button>
+            <button class="item orange">=</button>
+            <button class="item orange">D</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
